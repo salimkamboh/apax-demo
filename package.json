@@ -1,0 +1,15 @@
+{
+  "name": "apax-auth-assessment",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @apax/api & npm run dev --workspace @apax/web",
+    "build": "npm run build --workspace @apax/api && npm run build --workspace @apax/web",
+    "lint": "npm run lint --workspace @apax/web",
+    "typecheck": "npm run typecheck --workspaces"
+  }
+}
